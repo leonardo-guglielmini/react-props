@@ -7,7 +7,7 @@ export default function Main(){
     return(
         <main className={style.mainContent}>
             <div className="container">
-                <div className={style.row}>
+                <section className={style.row}>
                     {posts.map((post)=>
                         post.published===true ?
                         <div className={style.col3} key={post.id}>
@@ -15,13 +15,13 @@ export default function Main(){
                             {post.tags.forEach(tag => !tags.find((tagEl) => tagEl === tag) ? tags.push(tag) : null)}
                         </div> : null
                     )}
-                </div>
-                <div className={style.tagList}>
+                </section>
+                <section className={style.tagList}>
                     <h3>Tag presenti</h3>
                     <ul>
                         {tags.map((tag, index) => <li className={`${style.tag} ${tag === "html" ? style.htmlTag : tag==="js" ? style.jsTag : tag === "css" ? style.cssTag : style.phpTag}`} key={index}>{tag}</li> )}
                     </ul>
-                </div>
+                </section>
             </div>
         </main>
     )
