@@ -8,9 +8,10 @@ export default function Main(){
             <div className="container">
                 <div className={style.row}>
                     {posts.map((post)=>
+                        post.published===true ?
                         <div className={style.col3} key={post.id}>
                             <Card title={post.title} image={post.image} content={post.content} tags={post.tags} published={post.    published}/>
-                        </div>
+                        </div> : null
                     )}
                 </div>
             </div>
