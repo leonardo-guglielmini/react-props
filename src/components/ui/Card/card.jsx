@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import placeholderImg from "../../../assets/placeholder.webp"
 import style from "./card.module.css"
 
 
-export default function Card({title ="", image, content="",tags="",published}){
+export default function Card({title ="", image, content="",tags=""}){
     return(
         <div className={style.card}>
             <div className={style.col12}>
