@@ -38,27 +38,3 @@
 .col12{
     width: 100%;
 }
-
-.tag{
-    display: inline-block;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
-    padding: 0.3rem;
-    border: 0.1rem solid black;
-}
-
-.htmlTag{
-    background-color: salmon;
-}
-
-.jsTag{
-    background-color: aquamarine;
-}
-
-.cssTag{
-    background-color: burlywood;
-}
-
-.phpTag{
-    background-color: thistle;
-}
