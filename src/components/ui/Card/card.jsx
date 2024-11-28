@@ -1,6 +1,7 @@
 import placeholderImg from "../../../assets/placeholder.webp"
 import style from "./card.module.css"
 
+
 export default function Card({title ="", image, content="",tags="",published}){
     return(
         <div className={style.card}>
@@ -11,7 +12,7 @@ export default function Card({title ="", image, content="",tags="",published}){
                 <div className={style.cardBody}>
                     <h3>{title}</h3>
                     <p>{content}</p>
-                    {tags.map((tag,index) => <p className={style.tag} key={index}>{tag}</p>)}
+                    {tags.map((tag,index) => <p className={`${style.tag} ${tag === "html" ? style.htmlTag : tag==="js" ? style.jsTag : tag === "css" ? style.cssTag : style.phpTag}`} key={index}>{tag}</p>)}
                     <button><a href="#">Leggi di più</a></button>
                 </div>
             </div>
