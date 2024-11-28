@@ -1,3 +1,14 @@
 .mainContent{
     padding-bottom: 7rem;
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col3{
+    width: 45%;
+    padding-bottom: 1rem;
+}

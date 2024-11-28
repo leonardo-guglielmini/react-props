@@ -3,29 +3,15 @@
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
-    width: 600px;
 }
 
-.cardImage{
-    width: 600px;
-    height: 400px;
-    background-color: #cccccc;
-    text-align: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-
-.cardImageText{
-    height: 100%;
-    font-size: 4rem;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.thumb{
+    width: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .cardBody{
-    width: 100%;
     background-color: white;
     padding: 0.5rem 1rem;
     border-bottom-left-radius: 1rem;

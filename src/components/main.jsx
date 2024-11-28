@@ -1,11 +1,18 @@
 import style from "./main.module.css"
 import Card from "./ui/Card/card"
+import {posts} from "../data/posts"
 
 export default function Main(){
     return(
         <main className={style.mainContent}>
             <div className="container">
-                <Card/>
+                <div className={style.row}>
+                    {posts.map((post)=>
+                        <div className={style.col3} key={post.id}>
+                            <Card title={post.title} image={post.image} content={post.content} tags={post.tags} published={post.    published}/>
+                        </div>
+                    )}
+                </div>
             </div>
         </main>
     )
