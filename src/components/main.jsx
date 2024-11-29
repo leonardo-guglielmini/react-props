@@ -1,7 +1,6 @@
 import style from "./main.module.css"
 import Card from "./ui/Card/card"
 import {posts} from "../data/posts"
-import getTagStyle from "./getTagStyle.js"
 const tags = []
 
 export default function Main(){
@@ -20,7 +19,7 @@ export default function Main(){
                 <section className={style.tagList}>
                     <h3>Tag presenti</h3>
                     <ul>
-                        {tags.map((tag, index) => <li className={`tag ${getTagStyle(tag)}`} key={index}>{tag}</li> )}
+                        {tags.map((tag, index) => <li className={`tag ${tag}Tag`} key={index}>{tag}</li> )}
                     </ul>
                 </section>
             </div>
